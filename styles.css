@@ -12,6 +12,8 @@
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -22,9 +24,25 @@ a {
 /* Colors      */
 /* ----------- */
 
+:root {
+  --clr-dark-blue: hsl(233, 26%, 24%);
+  --clr-lime-green: hsl(136, 65%, 51%);
+  --clr-bright-cyan: hsl(192, 70%, 51%);
+
+  --clr-grayish-blue: hsl(233, 8%, 62%);
+  --clr-light-grayish-blue: hsl(220, 16%, 96%);
+  --clr-very-light-gray: hsl(0, 0%, 98%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
 /* ----------- */
 /* Typography  */
 /* ----------- */
+
+body {
+  font-size: 1.125rem;
+  font-family: "Public Sans", sans-serif;
+}
 
 /* ----------- */
 /* Nav         */
