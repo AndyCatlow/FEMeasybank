@@ -7,7 +7,6 @@ let isOpen = false;
 function toggleNav() {
   menu.classList.toggle("show");
   isOpen = !isOpen;
-  console.log(isOpen);
   return (toggleNavBtn.src = isOpen
     ? "./images/icon-close.svg"
     : "./images/icon-hamburger.svg");
