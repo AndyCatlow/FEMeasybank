@@ -49,6 +49,27 @@ body {
   font-family: "Public Sans", sans-serif;
 }
 
+h2 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+p {
+  line-height: 1.5;
+  color: var(--clr-grayish-blue);
+  font-size: 1rem;
+}
+
+/* ----------- */
+/*  */
+/* ----------- */
+
+section {
+  padding-inline: 2em;
+  padding-block: 5em;
+  text-align: center;
+}
+
 /* ----------- */
 /* CTA         */
 /* ----------- */
@@ -168,9 +189,6 @@ body {
 
 .header--blurb {
   margin-top: 1.5em;
-  color: var(--clr-grayish-blue);
-  line-height: 1.4;
-  font-size: 0.9rem;
 }
 
 .header--text__container .cta {
@@ -182,9 +200,65 @@ body {
 /* Features    */
 /* ----------- */
 
+.features {
+  background-color: var(--clr-very-light-gray);
+}
+
+.features--blurb {
+  margin-top: 1.5em;
+  margin-bottom: 4.5em;
+}
+
+.features--card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5em;
+}
+
+.features--card__icon {
+  max-width: 5em;
+}
+
+.features--card__title {
+  margin-top: 1.5em;
+  font-weight: 400;
+}
+
+.features--card__text {
+  margin-top: 2em;
+}
+
 /* ----------- */
 /* Articles    */
 /* ----------- */
+
+.article--card__container {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 5px 5px var(--clr-very-light-gray);
+  text-align: start;
+}
+
+.article--card--text__container {
+  padding-inline: 1.5em;
+  padding-block: 2rem;
+}
+
+.article--card__author {
+  font-size: 0.625rem;
+}
+
+.article--card__title {
+  font-weight: 400;
+  font-size: 1.125rem;
+  margin-top: 1em;
+}
+
+.article--card__text {
+  font-size: 0.85rem;
+  margin-top: 1em;
+}
 
 /* ----------- */
 /* Footer      */
