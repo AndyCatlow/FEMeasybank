@@ -21,10 +21,6 @@ a {
   color: inherit;
 }
 
-.hidden {
-  display: none;
-}
-
 /* ----------- */
 /* Colors      */
 /* ----------- */
@@ -48,6 +44,7 @@ body {
   font-size: 1.125rem;
   font-family: "Public Sans", sans-serif;
   text-align: center;
+  overflow-x: hidden;
 }
 
 p {
@@ -115,7 +112,7 @@ section,
   .nav-list {
     /* transform: scaleX(0); */
     background-color: var(--clr-white);
-    box-shadow: 0 250px 100vh 40vw rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 250px 100vh 40vw rgba(0, 0, 0, 0.3); */
     position: absolute;
     top: 5em;
     left: 50%;
@@ -135,7 +132,20 @@ section,
 
   .show {
     transform: translateX(-50%) scaleX(1);
+    opacity: 1;
+  }
 
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(var(--clr-dark-blue), transparent);
+    z-index: 3;
+    opacity: 0;
+    transform-origin: right;
+    transition: all 500ms ease-in-out;
+  }
+
+  .show-overlay {
     opacity: 1;
   }
 
