@@ -499,6 +499,10 @@ section {
     max-width: 85vh;
     overflow-x: hidden;
   }
+
+  .footer {
+    justify-content: space-between;
+  }
 }
 
 /* ----------------------------- */
@@ -507,7 +511,6 @@ section {
 
 @media screen and (min-width: 1375px) {
   .footer {
-    justify-content: space-between;
     gap: 10rem;
   }
 
