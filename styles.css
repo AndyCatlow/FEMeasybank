@@ -100,14 +100,8 @@ a:not(.cta):active::before {
   font-weight: bold;
   font-size: 0.9rem;
   background-color: transparent;
-  /*background: linear-gradient(
-    90deg,
-    var(--clr-lime-green),
-    var(--clr-bright-cyan)
-  ); */
   position: relative;
   overflow: hidden;
-
   isolation: isolate;
 }
 .cta::before {
@@ -161,7 +155,6 @@ a:not(.cta):active::before {
   z-index: 9;
   position: fixed;
   width: 100%;
-  /* overflow-x: hidden; */
 }
 
 .nav-list {
@@ -175,9 +168,7 @@ a:not(.cta):active::before {
 /* mobile only */
 @media screen and (max-width: 960px) {
   .nav-list {
-    /* transform: scaleX(0); */
     background-color: var(--clr-white);
-    /* box-shadow: 0 250px 100vh 40vw rgba(0, 0, 0, 0.3); */
     position: absolute;
     top: 5em;
     left: 50%;
@@ -241,13 +232,6 @@ a:not(.cta):active::before {
   padding-top: 300px;
 }
 
-/* .header--img__container {
-  position: relative;
-  height: 300px;
-  width: 100vw;
-  outline: 1px solid red;
-} */
-
 .mockups {
   position: absolute;
   top: -55px;
@@ -265,12 +249,10 @@ a:not(.cta):active::before {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* padding-inline: -2rem; */
   margin-top: 55px;
   padding-top: 1.5em;
   padding-bottom: 6em;
   background-color: var(--clr-white);
-  /* background-color: aquamarine; */
 }
 
 .header--title {
@@ -298,9 +280,7 @@ a:not(.cta):active::before {
 /* ----------- */
 
 section {
-  /* padding-inline: 2em; */
   padding-block: 5em;
-  /* text-align: center; */
 }
 
 .section--title {
@@ -493,12 +473,13 @@ section {
     padding-top: 10vh;
     overflow-x: hidden;
   }
+
   .header--text__container {
     max-width: 500px;
     background-color: transparent;
-    /* padding: 5em; */
     align-items: flex-start;
   }
+
   .header--img__container {
     width: 50vw;
     flex-grow: 1;
@@ -506,13 +487,11 @@ section {
   }
 
   .mockups {
-    /* transform: translatex(0); */
     top: -20px;
     right: 0;
     left: 85%;
     width: 50vw;
     max-width: 85vh;
-    /* height: 110%; */
     overflow-x: hidden;
   }
 }
