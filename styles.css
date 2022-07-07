@@ -199,6 +199,7 @@ a:not(.cta):active::before {
     opacity: 0;
     transform-origin: right;
     transition: all 500ms ease-in-out;
+    pointer-events: none;
   }
 
   .show-overlay {
