@@ -346,6 +346,11 @@ section {
   max-width: 250px;
 }
 
+.article--card__img__container {
+  max-height: 33%;
+  overflow: hidden;
+}
+
 .article--card--text__container {
   padding-inline: 1.5em;
   padding-block: 2rem;

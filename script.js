@@ -28,11 +28,13 @@ function getArticlesHtml(arr) {
   arr.forEach((article) => {
     articlesHtml += `
     <div class="article--card">
+    <div class="article--card__img__container">
     <img
       src="${article.image}"
       alt="${article.altText}"
       class="article--card__img"
     />
+    </div>
     <div class="article--card--text__container">
       <p class="article--card__author">By ${article.author}</p>
       <h3 class="article--card__title">
