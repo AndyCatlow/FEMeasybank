@@ -387,9 +387,9 @@ section {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  /* gap: 0.5em; */
+  gap: 1em;
   padding: 3em;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
